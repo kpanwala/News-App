@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Select Country"
+        android:layout_marginBottom="20sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:id="@+id/country"
+        android:textSize="20sp"
+        android:gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/india">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:id="@+id/india_img"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/india"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="Indian"
+            android:textColor="#000000"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:layout_marginRight="25sp"
+            android:layout_toRightOf="@id/india_img"
+            android:id="@+id/india_text"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/usa"
+        android:layout_below="@+id/india">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:id="@+id/usa_img"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/us"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="United States Of America"
+            android:textColor="#000000"
+            android:layout_marginRight="25sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:id="@+id/us_text"
+            android:layout_toRightOf="@id/usa_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/canada"
+        android:layout_below="@+id/usa">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:id="@+id/canada_img"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/canada"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="Canada"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:background="#ffffff"
+            android:layout_marginRight="25sp"
+            android:id="@+id/canada_text"
+            android:layout_toRightOf="@id/canada_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/germany"
+        android:layout_below="@+id/canada">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:id="@+id/germany_img"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/germany"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="Germany"
+            android:layout_marginRight="25sp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:background="#ffffff"
+            android:id="@+id/germany_text"
+            android:layout_toRightOf="@id/germany_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/uk"
+        android:layout_below="@+id/germany">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20sp"
+            android:id="@+id/uk_img"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/uk"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:layout_marginRight="25sp"
+            android:text="United Kingdom(UK)"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:id="@+id/uk_text"
+            android:layout_toRightOf="@id/uk_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/australia"
+        android:layout_below="@+id/uk">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20sp"
+            android:id="@+id/australia_img"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/australia"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="Australia"
+            android:textColor="#000000"
+            android:layout_marginRight="25sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:background="#ffffff"
+            android:id="@+id/australia_text"
+            android:layout_toRightOf="@id/australia_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/switzerland"
+        android:layout_below="@+id/australia">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20sp"
+            android:id="@+id/switzerland_img"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/switzerland"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="Switzerland"
+            android:textColor="#000000"
+            android:layout_marginRight="25sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:background="#ffffff"
+            android:id="@+id/switzerland_text"
+            android:layout_toRightOf="@id/switzerland_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/nz"
+        android:layout_below="@+id/switzerland">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20sp"
+            android:id="@+id/nz_img"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/nz"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="New Zealand"
+            android:textColor="#000000"
+            android:layout_marginRight="25sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:background="#ffffff"
+            android:id="@+id/nz_text"
+            android:layout_toRightOf="@id/nz_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/mexico"
+        android:layout_below="@+id/nz">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:id="@+id/mexico_img"
+            android:src="@drawable/mexico"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="Mexico"
+            android:textColor="#000000"
+            android:layout_marginRight="25sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:background="#ffffff"
+            android:id="@+id/mexico_text"
+            android:layout_toRightOf="@id/mexico_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/france"
+        android:layout_below="@+id/mexico">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:id="@+id/france_img"
+            android:src="@drawable/france"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="France"
+            android:textColor="#000000"
+            android:layout_marginRight="25sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:background="#ffffff"
+            android:id="@+id/france_text"
+            android:layout_toRightOf="@id/france_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:id="@+id/norway"
+        android:layout_below="@+id/france">
+
+
+        <ImageView
+            android:layout_width="65sp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20sp"
+            android:id="@+id/norway_img"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/norway"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:elevation="1dp"
+            android:text="Norway"
+            android:textColor="#000000"
+            android:layout_marginRight="25sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="15sp"
+            android:background="#ffffff"
+            android:id="@+id/norway_text"
+            android:layout_toRightOf="@id/norway_img"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="15sp"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
