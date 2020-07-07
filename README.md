@@ -8,8 +8,6 @@ API News Is JSON API for live news and blog articles from the media.
 
 • Material design
 
-• Prettytime for Convert Java Date() objects in just “a few minutes!”
-
 # Screenshot
 ![Alt text](https://github.com/kpanwala/News-App/blob/master/Screenshot-NewsApp-Copy.png?raw=true "News API")
 
