@@ -47,9 +47,11 @@ import android.telephony.TelephonyManager;
 
 public class MainActivity<rand_int> extends AppCompatActivity implements  SwipeRefreshLayout.OnRefreshListener{
 
-    public static final String API_KEY1 []= {"083341c007b3446f87972661995a65dd","610ef3277bb1439ead17722d60cf6e55"};
+    //Enter your API here also if you have multiple API then this will randomly use any so you could have more double news request per day.
+    public static final String API_KEY1 []= {""};
     Random rand = new Random();
     public static String API_KEY="";
+    
     // Generate random integers in range 0 to 999
     int rand_int = 0;
 
